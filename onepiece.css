@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans, arial black, Helvetica Neue, Helvetica;
+}
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+}
+
+.navbar {
+    background-color: #54e3f6;
+    box-shadow: 20px black;
+    border: 3px solid black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 0px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-menu li {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    position: relative;
+    font-style: italic;
+}
+
+.icons {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    /* display: block; */
+}
+
+.social-icons a {
+    height: 20px;
+    padding-right: 10px;
+    letter-spacing: 5px;
+    color: black;
+    font-style: italic;
+}
+
+.icons:hover {
+    box-shadow: 10px solid black;
+    border: 5px solid black;
+}
+
+/* context-1 */
+
+.content-1 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('path/to/your/background.png') no-repeat center center;
+    background-size: cover;
+}
+
+.main-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    filter: brightness(0.5);
+
+}
+
+.main-image:hover {
+    /* filter: brightness(1.5); */
+}
+
+
+/* end content */
+
+/* content-2*/
+
+.content-2 {
+    background-color: #54e3f6;
+    border: 3px solid black;
+    background: linear-gradient(
+        45deg, 
+        #fff673 25%, 
+        #BBDEFB 25%, 
+        #ffd92f 50%, 
+        #90CAF9 50%, 
+        #90CAF9 75%, 
+        #e7cf62 75%
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes lightning {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7; /* Atur transparansi efek petir */
+    }
+}
+
+
+.isi-content2 {
+
+}
+
+.isi-content2 p a {
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+.isi-content2 p a:hover {
+   color:red;
+}
+
+/* end-content2*/
+
+/* content-3  */
+ .content-3 {
+    padding: 20px;
+    background-color: black;
+  } 
+
+.box-manga {
+background-color: rgb(255, 250, 250);
+border-radius: 20px;
+border: 5px solid rgb(68, 209, 197);
+padding: 20px; /* Ubah padding agar lebih proporsional */
+width: 100%; /* Atur lebar agar hampir penuh dengan .content-5 */
+height: auto; /* Biarkan tinggi menyesuaikan dengan konten */
+display: flex; /* Tambahkan ini */
+flex-wrap: wrap; /* Tambahkan ini untuk membuat elemen di dalamnya berlanjut ke baris berikutnya */
+justify-content: flex-start; /* Tambahkan ini */
+align-items: flex-start; /* Tambahkan ini */
+box-sizing: border-box; /* Tambahkan ini */
+}
+
+
+.manga {
+width: 1750px; /* Atur lebar sesuai kebutuhan */
+height: 100%; /* Biarkan tinggi menyesuaikan dengan konten */
+margin: 10px; /* Tambahkan margin untuk spasi antar elemen */
+border-radius: 10px;
+display: flex;
+flex-direction: column; /* Atur elemen anak secara vertikal */
+justify-content: flex-start; /* Posisi elemen anak dimulai dari atas */
+align-items: center; /* Rata tengah elemen anak secara horizontal */
+box-sizing: border-box; /* Tambahkan ini */
+background-color: #00cfff; /* Tambahkan warna background */
+overflow: hidden; /* Sembunyikan bagian yang keluar dari elemen */
+padding: 10px; /* Tambahkan padding jika diperlukan */
+}
+
+.manga img {
+width: 1750px; /* Atur lebar gambar sesuai dengan elemen induk */
+height: 350px; /* Biarkan tinggi menyesuaikan dengan rasio asli */
+border-top-left-radius: 10px; /* Border radius hanya untuk bagian atas */
+border-top-right-radius: 10px; /* Border radius hanya untuk bagian atas */
+object-fit: cover; /* Agar gambar menyesuaikan diri dengan ukuran elemen tanpa merusak rasio aspek */
+}
+
+.manga img:hover {
+filter: contrast(50%);
+}
+
+.manga p {
+color: white;
+text-decoration: none;
+font-size: 16px;
+text-align: center;
+margin: 10px 0 0 0;
+width: 100%;
+
+}
+
+.manga p:hover {
+color:red;
+
+}
+
+a {
+text-decoration: none;
+}
+
+h3 {
+    background-color: #54e3f6;
+    border-radius: 7px;
+}
+
+.link1 {
+    background-color: black;
+}
+
+.link1 a{
+    color: white;
+}
+
+.link1 a:hover {
+    color:red;
+}
+
+.link2 {
+    background-color: rgb(150, 48, 197);
+}
+
+.link2 a{
+    color: white;
+}
+
+.link2 a:hover {
+    color:rgb(89, 125, 252);
+}
+
+.induk-manga {
+    background-color: blueviolet;
+    width: 1750px;
+    text-align: center;
+}
+
+
+/* end .content-3 */
